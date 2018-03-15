@@ -1,4 +1,5 @@
 // Making a request call for nhl.com's homepage
+
 request("https://www.nhl.com/", function(error, response, html) {
 
   // Load the body of the HTML into cheerio
