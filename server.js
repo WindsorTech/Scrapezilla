@@ -12,7 +12,7 @@ app.listen(port, function() {
     console.log("App OK on port", port);
 }); 
 
-// Make public a static dir.
+// Make public a static dir
 app.use(express.static("public"));
 
 app.get("/copa", function(req, res) {
