@@ -7,6 +7,7 @@ $.getJSON("/copa", function(data) {
   //   // Display the apropos information on the page
   //   $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
   // }
+  
 });
 
 console.log("WHATEVER MAN");
