@@ -23,8 +23,6 @@ app.get("/copa", function(req, res) {
 
 	$("div#widget-classificacao").each(function(idx, element){
 
-		//"div#widget-classificacao"
-
 		
 		//console.log($(this).html());
 
