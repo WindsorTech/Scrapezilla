@@ -15,7 +15,7 @@ app.listen(port, function() {
 // Make public a static dir
 app.use(express.static("public"));
 
-app.get("/copa", function(req, res) {
+app.get("/copa", function(req, res, body) {
 
 	request("http://globoesporte.globo.com/futebol/copa-do-mundo/classificacao.html", function(error, response, body) {
 
@@ -30,6 +30,8 @@ app.get("/copa", function(req, res) {
 
 
 		});
+
+	$('.tabela-header-titulo').addClass('header-red');
 
 	});
 
