@@ -15,6 +15,12 @@ app.listen(port, function() {
 // Make public a static dir
 app.use(express.static("public"));
 
+app.get("/", function(req, res) {
+
+	res.render("/copa");
+
+});
+
 app.get("/copa", function(req, res, body) {
 
 	request("http://globoesporte.globo.com/futebol/copa-do-mundo/classificacao.html", function(error, response, body) {
@@ -29,12 +35,14 @@ app.get("/copa", function(req, res, body) {
 		res.send($(this).html());
 
 
+
 		});
 
 	$('.tabela-header-titulo').addClass('header-red');
 
 	});
 
+	// res.redirect("/copa");
 
 	// request("https://globoesporte.globo.com/futebol/futebol-internacional/futebol-ingles/", function(error, response, body) {
 
