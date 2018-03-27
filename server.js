@@ -27,16 +27,18 @@ app.get("/copa", function(req, res, body) {
 
 	var $ = cheerio.load(body);
 
-	$("div#widget-classificacao").each(function(idx, element){
+	res.send($("div#widget-classificacao").html());
+
+	// $("div#widget-classificacao").each(function(){
 
 		
-		//console.log($(this).html());
+	// 	// idx, element
 
-		res.send($(this).html());
+	// 	res.send($(this).html());
 
 
 
-		});
+	// 	});
 	
 
 	});
