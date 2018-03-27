@@ -17,7 +17,7 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res) {
 
-	res.render("/copa");
+	res.redirect("/copa");
 
 });
 
@@ -37,12 +37,10 @@ app.get("/copa", function(req, res, body) {
 
 
 		});
-
-	$('.tabela-header-titulo').addClass('header-red');
+	
 
 	});
 
-	// res.redirect("/copa");
 
 	// request("https://globoesporte.globo.com/futebol/futebol-internacional/futebol-ingles/", function(error, response, body) {
 

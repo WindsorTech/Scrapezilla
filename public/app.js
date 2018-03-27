@@ -4,8 +4,13 @@ $( document ).ready(function() {
 
     // alert( "ready!" );
 
-    $('.tabela-header-titulo').addClass('header-red');
+    //$('.tabela-header-titulo').addClass('header-red');
 
+    // $("#widget-classificacao").hide();
+
+    //$(".container").text("WE ARE THE YOUTH");
+
+    //$("#scrape-button").show();
 
 
 
