@@ -29,21 +29,21 @@ app.get("/copa", function(req, res, body) {
 
 	res.send($("div#widget-classificacao").html());
 
-	// $("div#widget-classificacao").each(function(){
+	});
 
-		
-	// 	// idx, element
+});
+
+
+	// $("div#widget-classificacao").each(function(idx, element){
+
 
 	// 	res.send($(this).html());
-
 
 
 	// 	});
 	
 
-	});
-
-
+	
 	// request("https://globoesporte.globo.com/futebol/futebol-internacional/futebol-ingles/", function(error, response, body) {
 
 	// var $ = cheerio.load(body);
@@ -57,5 +57,3 @@ app.get("/copa", function(req, res, body) {
 	// 	});
 
 	// });
-
-});
