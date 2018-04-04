@@ -15,13 +15,15 @@ app.listen(port, function() {
 // Make public a static dir
 app.use(express.static("public"));
 
-app.get("/copas", function(req, res, body) {
+app.get("/copa", function(req, res, body) {
 
 	request("http://globoesporte.globo.com/futebol/futebol-feminino/copa-america-feminina/", function(error, response, body) {
 
 	var $ = cheerio.load(body);
 
-	res.send($("div#widget-classificacao").html());
+	res.send($("div#widget-classificacao").html());	
+
+	// res.send($("div#widget-classificacao").html());
 
 
 	});
