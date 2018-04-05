@@ -12,8 +12,6 @@ app.listen(port, function() {
     console.log("App OK on port", port);
 }); 
 
-//=======================================================//
-
 var fs = require('fs'),
     request = require('request'),
     cheerio = require('cheerio'),
