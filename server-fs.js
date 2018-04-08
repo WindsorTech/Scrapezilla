@@ -51,7 +51,6 @@ scrapePage();
 
 // 	res.send($("div#widget-classificacao").html());
 
-
 // 	});
 
 // });
