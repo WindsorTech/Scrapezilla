@@ -22,7 +22,7 @@ function scrapePage () {
     request(pageURL, function(error, response, responseHtml){        
 
         //write the entire scraped page to the local file system
-        fs.writeFile(__dirname + '/index.html', responseHtml, function(err){
+        fs.writeFile(__dirname + '/copaz.html', responseHtml, function(err){
             console.log('Copa do Mundo successfully written to HTML folder');
         })
     }) ;
