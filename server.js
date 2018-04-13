@@ -21,6 +21,8 @@ app.get("/copa", function(req, res, body) {
 
 	var $ = cheerio.load(body);
 
+	var result = [];
+
 	res.send($("div#widget-classificacao").html());	
 
 	// res.send($("div#widget-classificacao").html());
