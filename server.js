@@ -25,9 +25,6 @@ app.get("/copa", function(req, res, body) {
 
 	res.send($("div#widget-classificacao").html());	
 
-	// res.send($("div#widget-classificacao").html());
-
-
 	});
 
 });
