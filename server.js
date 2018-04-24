@@ -23,7 +23,24 @@ app.get("/copa", function(req, res, body) {
 
 	var result = [];
 
-	res.send($("div#widget-classificacao").html());	
+		$("div.tabela-pontos-corridos").each(function(idx, element){
+
+		var title = $(this).text();
+
+		var link = $(element).html();
+
+		console.log(title);
+		console.log(link);
+
+		// console.log($(this).text());
+
+		// 	res.send($(this).html());
+
+		//res.send($("div#widget-classificacao").html());	
+
+		});
+
+	
 
 	});
 
