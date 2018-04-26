@@ -29,8 +29,8 @@ request("https://www.nhl.com/", function(error, response, html) {
   console.log(html);
 });
 
-//==============================================================//
-//==============================================================//
+//=============================================================//
+//=============================================================//
 
 // Run request to grab the HTML from awwards's clean website section
 request("http://www.awwwards.com/websites/clean/", function(error, response, html) {
