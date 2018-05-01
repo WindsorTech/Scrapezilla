@@ -32,9 +32,9 @@ app.get("/copa", function(req, res, body) {
 		console.log(title);
 		console.log(link);
 
-		// console.log($(this).text());
+		//console.log($(this).text());
 
-		// 	res.send($(this).html());
+		//res.send($(this).html());
 
 		//res.send($("div#widget-classificacao").html());	
 
