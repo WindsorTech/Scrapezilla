@@ -1,16 +1,6 @@
 $( document ).ready(function() {
     
-
-
-    // alert( "ready!" );
-
-    //$('.tabela-header-titulo').addClass('header-red');
-
-    // $("#widget-classificacao").hide();
-
-    //$(".container").text("WE ARE THE YOUTH");
-
-    //$("#scrape-button").show();
+	// MAKE IT DO SOMETHING WITH THE DATA 
 
 
 
@@ -33,4 +23,4 @@ $( document ).ready(function() {
 
 // });
 
-// console.log("WHATEVER MAN");
+// console.log("It works!");

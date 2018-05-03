@@ -25,16 +25,10 @@ app.get("/copa", function(req, res, body) {
 
 		$("div.tabela-pontos-corridos").each(function(idx, element){
 
-		var title = $(this).text();
 
-		var link = $(element).html();
-
-		console.log(title);
-		console.log(link);
+		res.send($(this).html());
 
 		//console.log($(this).text());
-
-		//res.send($(this).html());
 
 		//res.send($("div#widget-classificacao").html());	
 
@@ -45,13 +39,3 @@ app.get("/copa", function(req, res, body) {
 	});
 
 });
-
-	// $("div.tabela-pontos-corridos").each(function(idx, element){
-
-	// 	res.send($(this).text());
-
-	// 	// console.log($(this).text());
-
-	// 	// 	res.send($(this).html());
-
-	// 	});
