@@ -17,13 +17,13 @@ app.use(express.static("public"));
 
 app.get("/copa", function(req, res, body) {
 
-	request("http://globoesporte.globo.com/futebol/futebol-feminino/copa-america-feminina/", function(error, response, body) {
+	request("http://globoesporte.globo.com/futebol/copa-do-mundo/classificacao.html", function(error, response, body) {
 
 	var $ = cheerio.load(body);
 
 	var result = [];
 
-		$("div.tabela-pontos-corridos").each(function(idx, element){
+		$("div#widget-classificacao").each(function(idx, element){
 
 
 		res.send($(this).html());
@@ -33,8 +33,6 @@ app.get("/copa", function(req, res, body) {
 		//res.send($("div#widget-classificacao").html());	
 
 		});
-
-	
 
 	});
 

@@ -1,12 +1,10 @@
 $( document ).ready(function() {
     
-	// MAKE IT DO SOMETHING WITH THE DATA 
+	// Make it do something with the scraped data 
 
 
 
 });
-
-
 
 
 // // Grab the articles as a json

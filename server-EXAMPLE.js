@@ -32,6 +32,8 @@ request("https://www.nhl.com/", function(error, response, html) {
 //============================================================//
 //============================================================//
 
+// OTHER EXAMPLE
+
 // Run request to grab the HTML from awwards's clean website section
 request("http://www.awwwards.com/websites/clean/", function(error, response, html) {
 
@@ -58,5 +60,3 @@ request("http://www.awwwards.com/websites/clean/", function(error, response, htm
   // With each link scraped, log the result to the console
   console.log(result);
 });
-
-//===========================================================//
